@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employment Verification Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+    
+  </head>
+  <body>
+    <div class="testbox">
+    <form action="/">
+      <div class="banner">
+        <h1>Employment Verification Form</h1>
+      </div>
+      <p>Please fill out with the information that is requested below and submit the employment verification form. Thank you!</p>
+      <hr/>
+      <fieldset>
+        <legend>Company Information</legend>
+        <div class="item">
+          <label for="c_name">Company Name<span>*</span></label>
+          <input id="c_name" type="text" name="text" required/>
+        </div>
+        <div class="item">
+          <label for="c_address">Company Address<span>*</span></label>
+          <input id="c_address" type="text" name="text" placeholder="Street Address" required/>
+        </div>
+        <div class="item">
+          <div class="name-item">
+            <div>
+              <input id="c_city" type="text" name="city" placeholder="City" required />
+            </div>
+            <div>
+              <input id="c_state" type="text" name="state" placeholder="State/region" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="name-item">
+              <div>
+                <input id="c_zip" type="text" name="zip" placeholder="ZIP Code" />
+              </div>
+              <div>
+                <select>
+                  <option id="c_country" selected value="" disabled selected>Country</option>
+                  <option value="1">Russia</option>
+                  <option value="2">Germany</option>
+                  <option value="3">France</option>
+                  <option value="4">Armenia</option>
+                  <option value="5">USA</option>
+                  <option value="6">Spain</option>
+                  <option value="7">Italy</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </fieldset>
+      </br>
+      <fieldset>
+      <legend>Employee Information</legend>
+      <div class="item">
+      <label for="e_fname">Name<span>*</span></label>
+      <div class="name-item">
+      <input id="e_fname" type="text" name="fname" placeholder="First" required/>
+      <input id="e_lname" type="text" name="lname" placeholder="Last" required/>
+      </div>
+      </div>
+      <div class="item">
+      <label for="e_bdate">Date of Birth<span>*</span></label>
+      <input id="e_bdate" type="date" name="e_bdate" required/>
+      <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="item">
+      <label for="e_email">Email<span>*</span></label>
+      <input id="e_email" type="text" name="e_email" required/>
+      </div>
+      <div class="item">
+      <label for="e_position">Position<span>*</span></label>
+      <input id="e_position" type="text" name="e_position" required />
+      </div>
+      <fieldset>
+      <div class="btn-block">
+      <button type="submit" onclick="companyInfo()">APPLY</button>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
